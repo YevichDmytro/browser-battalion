@@ -85,9 +85,6 @@
     gap: 6px;
 }
 
-.yachts-characteristics-item {
-}
-
 .yachts-characteristics-item p{
     font-weight: 400;
     font-size: 14px;
@@ -104,9 +101,6 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
-}
-
-.yachts-value-item {
 }
 
 .yachts-value-item p{
