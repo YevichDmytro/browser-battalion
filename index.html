@@ -11,7 +11,7 @@
     />
     
     <script type="module" crossorigin src="/browser-battalion/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/browser-battalion/assets/index-9deda96e.css">
+    <link rel="stylesheet" href="/browser-battalion/assets/index-b2c1035d.css">
   </head>
   <body>
     <!-- Oleh Volcoboi -->
@@ -50,7 +50,7 @@
           ></a>
         </li>
       </ul>
-      <button type="button" class="open-menu-btn">
+      <button type="button" class="open-menu-btn js-open-menu">
         <svg class="icon-open-menu" width="28" height="28">
           <use href="/browser-battalion/assets/sprite-a2253695.svg#icon-open-burg"></use>
         </svg>
@@ -58,14 +58,15 @@
     </nav>
   </div>
 
-  <div class="mob-menu-container container">
-    <a href="index.html" class="header-logo">yachtjet</a>
-    <button type="button" class="close-menu-btn">
-      <svg width="28" height="28" class="icon-close-btn">
-        <use href="/browser-battalion/assets/sprite-a2253695.svg#icon-close-menu"></use>
-      </svg>
-    </button>
-
+  <div class="mob-menu-container js-menu-container">
+    <nav class="mob-menu-navigation">
+      <a href="index.html" class="header-logo">yachtjet</a>
+      <button type="button" class="close-menu-btn js-close-menu">
+        <svg width="16" height="16" class="icon-close-btn">
+          <use href="/browser-battalion/assets/sprite-a2253695.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+    </nav>
     <ul class="mob-menu-list">
       <li class="mob-menu-item">
         <a href="./index.html" class="mob-menu-link activ-mob">About</a>
@@ -78,31 +79,29 @@
       </li>
     </ul>
 
-    <div class="menu-social-content">
-      <ul class="menu-social-list">
-        <li class="menu-list-item">
-          <a href="index.html" class="menu-icons-link">
-            <svg class="menu-social-icons" width="24" height="24">
-              <use href="/browser-battalion/assets/sprite-a2253695.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="menu-list-item">
-          <a href="index.html" class="menu-icons-link">
-            <svg class="menu-social-icons" width="24" height="24">
-              <use href="/browser-battalion/assets/sprite-a2253695.svg#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="menu-list-item">
-          <a href="index.html" class="menu-icons-link">
-            <svg class="menu-social-icons" width="24" height="24">
-              <use href="/browser-battalion/assets/sprite-a2253695.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ul class="menu-social-list">
+      <li class="menu-list-item">
+        <a href="index.html" class="menu-icons-link">
+          <svg class="menu-social-icons" width="24" height="24">
+            <use href="/browser-battalion/assets/sprite-a2253695.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="menu-list-item">
+        <a href="index.html" class="menu-icons-link">
+          <svg class="menu-social-icons" width="24" height="24">
+            <use href="/browser-battalion/assets/sprite-a2253695.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="menu-list-item">
+        <a href="index.html" class="menu-icons-link">
+          <svg class="menu-social-icons" width="24" height="24">
+            <use href="/browser-battalion/assets/sprite-a2253695.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
 </header>
 
