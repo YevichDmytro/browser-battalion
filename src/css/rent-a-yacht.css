@@ -1,9 +1,13 @@
 .rent-yacht {
-  width: 335px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
+
+.container-div {
+  margin: 0 auto 80px auto;
+  max-width: 335px;
+}
+
 .rent-yacht-title {
-  font-family: var(--font-family);
   color: #fbfbfb;
   font-weight: 500;
   font-size: 28px;
@@ -11,39 +15,42 @@
   letter-spacing: -0.02em;
   padding-bottom: 40px;
 }
-.rent-yacht-container {
-}
+
 .rent-yacht-form {
   display: flex;
   flex-direction: column;
   /* gap: 18px; */
-  margin-bottom: 80px;
 }
 .rent-yacht-lable {
   margin-bottom: 18px;
 }
+.label-bottom {
+  margin-bottom: 0;
+}
+
 .rent-yacht-input {
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 12px;
   width: 100%;
   height: 42px;
-  font-family: var(--font-family);
   font-size: 12px;
   line-height: 1.17;
-  /* color: rgba(251, 251, 251, 0.4); */
   padding: 14px 18px;
+  background-color: #0e1823;
+  color: #fbfbfb;
 }
 .rent-yacht-textarea {
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 12px;
   width: 100%;
   height: 108px;
-  font-family: var(--font-family);
   font-size: 12px;
   line-height: 1.17;
-  color: rgba(251, 251, 251, 0.4);
   padding-left: 18px;
   padding-top: 14px;
+  resize: none;
+  color: #fbfbfb;
+  background-color: #0e1823;
 }
 .rent-yacht-button {
   background-color: #1b414b;
@@ -54,11 +61,81 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-family);
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.02em;
   color: #fbfbfb;
   border: none;
+  margin-top: 40px;
+}
+
+.rent-a-yacht-photo {
+  width: 335px;
+  height: 412px;
+  border-radius: 24px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .rent-yacht-title {
+    font-size: 48px;
+  }
+
+  .rent-a-yacht-photo {
+    width: 704px;
+    height: 534px;
+  }
+
+  .container-div {
+    margin: 0 auto 100px auto;
+    max-width: 472px;
+  }
+  .rent-yacht-input {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .rent-yacht-textarea {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .rent-yacht-button {
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 18px 75px;
+    width: 194px;
+    height: 56px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .container-flex {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .rent-a-yacht-photo {
+    width: 658px;
+    height: 536px;
+  }
+
+  .container-div {
+    margin-left: 50px;
+    max-width: 472px;
+  }
+
+  .rent-yacht-title {
+    font-size: 48px;
+  }
 }
