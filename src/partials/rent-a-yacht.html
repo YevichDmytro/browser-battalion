@@ -1,48 +1,82 @@
 <section class="rent-yacht">
   <h2 class="rent-yacht-title">Rent a yacht now</h2>
-  <form class="rent-yacht-form" action="">
-    <label class="rent-yacht-lable" for="user-name"
-      ><input
-        class="rent-yacht-input"
-        type="text"
-        name="user-name"
-        id="user-name"
-        placeholder="Full Name"
-        required
+  <div class="rent-yacht-container">
+    <form class="rent-yacht-form" action="">
+      <label class="rent-yacht-lable" for="user-name"
+        ><input
+          class="rent-yacht-input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Full Name"
+          required
+        />
+      </label>
+      <label class="rent-yacht-lable" for="user-email"
+        ><input
+          class="rent-yacht-input"
+          type="email"
+          name="user-email"
+          id="user-email"
+          placeholder="Email"
+          required
+        />
+      </label>
+      <label class="rent-yacht-lable" for="user-tel"
+        ><input
+          class="rent-yacht-input"
+          type="tel"
+          name="user-tel"
+          id="user-tel"
+          placeholder="Phone number"
+          required
+        />
+      </label>
+      <label class="rent-yacht-lable" for="user-comment">
+        <textarea
+          class="rent-yacht-textarea"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button class="rent-yacht-button" type="submit">Send</button>
+    </form>
+    <picture>
+      <source
+        srcset="
+          /img/rent-a-yacht/rent-a-yacht-desc-1440-1x.jpg 1x,
+          /img/rent-a-yacht/rent-a-yacht-desc-1440-2x.jpg 2x
+        "
+        media="(min-width: 1440px)"
       />
-    </label>
-    <label class="rent-yacht-lable" for="user-email"
-      ><input
-        class="rent-yacht-input"
-        type="email"
-        name="user-email"
-        id="user-email"
-        placeholder="Email"
-        required
+      <source
+        srcset="
+          /img/rent-a-yacht/rent-a-yacht-desc-1280-1x.jpg 1x,
+          /img/rent-a-yacht/rent-a-yacht-desc-1280-2x.jpg 2x
+        "
+        media="(min-width: 1158px)"
       />
-    </label>
-    <label class="rent-yacht-lable" for="user-tel"
-      ><input
-        class="rent-yacht-input"
-        type="tel"
-        name="user-tel"
-        id="user-tel"
-        placeholder="Phone number"
-        required
+      <source
+        srcset="
+          /img/rent-a-yacht/rent-a-yacht-tab-1x.jpg 1x,
+          /img/rent-a-yacht/rent-a-yacht-tab-2x.jpg 2x
+        "
+        media="(min-width: 768px)"
       />
-    </label>
-    <label class="rent-yacht-lable" for="user-comment">
-      <textarea
-        class="rent-yacht-textarea"
-        name="user-comment"
-        id="user-comment"
-        placeholder="Comment"
-      ></textarea>
-    </label>
-    <button class="rent-yacht-button" type="submit">Send</button>
-  </form>
-  <img
-    src="../img/rent-a-yacht/rent-yacht-mob-1x.jpg"
-    alt="photo of a beautiful yacht"
-  />
+      <source
+        srcset="
+          /img/rent-a-yacht/rent-yacht-mob-1x.jpg 1x,
+          /img/rent-a-yacht/rent-yacht-mob-2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        src="/img/rent-a-yacht/rent-yacht-mob-1x.jpg"
+        alt="photo of a beautiful yacht"
+        width="335"
+        height="412"
+      />
+    </picture>
+  </div>
 </section>
