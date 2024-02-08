@@ -23,6 +23,10 @@
   src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   color: #fbfbfb;
@@ -45,6 +49,10 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 150px;
+  }
+
   .container {
     padding: 0 32px;
     max-width: 768px;
