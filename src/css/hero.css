@@ -33,7 +33,7 @@
   line-height: 1.17;
   text-align: center;
   color: rgba(251, 251, 251, 0.7);
-  margin-bottom: 38px;
+  margin: 0 auto 38px;
   max-width: 335px;
 }
 .hero-btn {
@@ -57,4 +57,40 @@
 .hero-btn:hover {
   background: #fbfbfb;
   color: #1b414b;
+}
+
+/**---------TABLET--------**/
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: url(/img/hero-bg/yacht-bg-tab.jpg);
+    height: 962px;
+  }
+
+  @media screen and (min-device-pixel-ration: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: url(/img/hero-bg/yacht-bg-tab@2x.jpg);
+    }
+  }
+  .hero-title {
+    font-size: 70px;
+    max-width: 704px;
+    padding-top: 200px;
+  }
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 597px;
+    margin-bottom: 48px;
+  }
+  .hero-btn {
+    padding: 16px 40px;
+    min-width: 179px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 1.1;
+    margin-bottom: 282px;
+  }
 }
