@@ -8,8 +8,8 @@
 
 .footer-wrapper {
     display: flex;
-    gap: 10px;
     margin-bottom: 80px;
+    justify-content: space-between;
 }
 
 .footer-yachtjet {
@@ -59,7 +59,7 @@
 
 .footer-bottom-text {
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
 }
 
 .footer-text-item {
@@ -74,6 +74,37 @@
     .footer-container {
         max-width: 736px;
         padding: 50px 48px 20px;
+    }
+
+    .footer-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-wrapper {
+        margin-bottom: 96px;
+    }
+
+    .footer-yachtjet {
+        font-size: 20px;
+        margin-right: 110px;
+    }
+
+    .footer-nav-item {
+        min-width: 91px;
+    }
+
+    .footer-quote {
+        font-size: 32px;
+    }
+
+    .footer-text-item {
+        font-size: 14px;
+    }
+
+    .footer-bottom-text {
+        justify-content: center;
+        gap: 32px;
     }
 }
 
