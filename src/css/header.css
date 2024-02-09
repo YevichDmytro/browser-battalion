@@ -26,10 +26,12 @@
 
 /* ================================MOBILE================================= */
 
-
-
 .header-container {
-  padding: 20px 20px 0 20px;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header-navigation {
@@ -75,15 +77,12 @@
 .mob-menu-container {
   width: 100%;
   min-height: 100%;
-  padding: 0 20px;
+  padding: 16px 20px 40px 20px;
   display: flex;
   flex-direction: column;
-  top: 0;
-  left: 0;
+  align-items: center;
   position: fixed;
   background: #0e1823;
-  padding-top: 16px;
-  padding-bottom: 40px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -104,6 +103,7 @@
 }
 
 .mob-menu-navigation {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -218,4 +218,13 @@
 
 /* ===============================DESKTOP_1280============================= */
 @media screen and (min-width: 1280px) {
+  .header-container {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .mob-menu-navigation {
+    max-width: 335px;
+  }
 }
