@@ -1,0 +1,53 @@
+.section {
+}
+
+.about-us-section {
+}
+
+.container {
+}
+
+.about-us-container {
+  background-color: #fbfbfb;
+  border-radius: 24px;
+}
+
+.about-us-all-text {
+  padding: 40px 20px 0 20px;
+  margin-bottom: 40px;
+}
+
+.about-us-title {
+  color: #1b414b;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.about-us-description {
+}
+
+.about-us-description-title {
+  color: #1b414b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.about-us-description-text {
+  color: #040306;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+}
+
+.about-us-picture {
+}
+
+.about-us-img {
+}
