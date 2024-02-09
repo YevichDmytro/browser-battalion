@@ -1,6 +1,6 @@
-<section class="rent-yacht section">
-  <div class="container container-flex">
-    <div class="container-div">
+<section class="section">
+  <div class="container flex-container">
+    <div class="container-section">
       <h2 class="rent-yacht-title" id="rent-a-yacht">Rent a yacht now</h2>
       <form class="rent-yacht-form" action="">
         <label class="rent-yacht-lable" for="user-name"
@@ -11,6 +11,7 @@
             id="user-name"
             placeholder="Full Name"
             required
+            pattern="[A-Za-z]+"
           />
         </label>
         <label class="rent-yacht-lable" for="user-email"
@@ -21,6 +22,7 @@
             id="user-email"
             placeholder="Email"
             required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           />
         </label>
         <label class="rent-yacht-lable" for="user-tel"
@@ -31,6 +33,7 @@
             id="user-tel"
             placeholder="Phone number"
             required
+            pattern="^\+[0-9]{1,}$"
           />
         </label>
         <label class="rent-yacht-lable label-bottom" for="user-comment">
@@ -39,6 +42,7 @@
             name="user-comment"
             id="user-comment"
             placeholder="Comment"
+            pattern=".{10,}"
           ></textarea>
         </label>
         <button class="rent-yacht-button" type="submit">Send</button>
@@ -71,7 +75,7 @@
           /img/rent-a-yacht/rent-yacht-mob-1x.jpg 1x,
           /img/rent-a-yacht/rent-yacht-mob-2x.jpg 2x
         "
-        media="(max-width: 767px)"
+        media="(max-width: 768px)"
       />
       <img
         class="rent-a-yacht-photo"
