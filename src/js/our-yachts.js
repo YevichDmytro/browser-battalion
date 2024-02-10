@@ -44,10 +44,10 @@ let swiper = new Swiper(".mySwiper", {
         clickable: true,
       },
       autoplay: {
-        delay: 5000,
+        delay: 2000,
         disableOnInteraction: false,
       },
-      speed: 1000,
+      speed: 2000,
       loop: true,
       breakpoints: {
         640: {
