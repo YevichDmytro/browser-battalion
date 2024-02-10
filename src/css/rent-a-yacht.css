@@ -84,10 +84,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .rent-yacht-title {
     font-size: 48px;
   }
@@ -123,10 +119,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-
   .flex-container {
     display: flex;
     flex-direction: row-reverse;
