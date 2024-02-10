@@ -44,6 +44,7 @@
 
 .open-menu-btn {
   border: none;
+  line-height: 0;
   background-color: transparent;
   padding: 0;
   width: 28px;
@@ -153,6 +154,12 @@
   fill: rgba(251, 251, 251, 0.8);
 }
 
+@media screen and (min-width: 375px) {
+  .mob-menu-navigation {
+    max-width: 335px;
+  }
+}
+
 /* ===================================TABLET============================= */
 @media screen and (min-width: 768px) {
   .header-navigation {
@@ -216,19 +223,17 @@
   .header-container {
     padding: 0 100px;
   }
-}
 
-.menu-link:hover,
-.menu-link:focus {
-  background-color: #1b414b;
-}
-.social-icons:hover,
-.social-icons:focus {
-  fill: #062730;
-}
+  .header-navigation {
+    padding: 4px 30px;
+  }
 
-@media screen and (min-width: 375px) {
-  .mob-menu-navigation {
-    max-width: 335px;
+  .menu-link:hover,
+  .menu-link:focus {
+    background-color: #1b414b;
+  }
+  .social-icons:hover,
+  .social-icons:focus {
+    fill: #062730;
   }
 }
