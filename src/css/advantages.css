@@ -53,14 +53,6 @@
     }
 }
 
-.advantages-list {
-    list-style-position: outside;
-    padding-left: 0;
-    list-style: none;
-    counter-reset: list-counter;
-    margin: 0;
-}
-
 @media all and (min-width:768px) {
     .advantages-list {
         display: flex;
