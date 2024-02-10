@@ -35,19 +35,15 @@ body {
 }
 
 .section {
-  padding: 0 0 80px 0;
+  padding-bottom: 80px;
 }
 
 .container {
   max-width: 375px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 375px) {
-  .container {
-    padding: 0 20px;
-  }
-}
 @media screen and (min-width: 768px) {
   .section {
     padding-bottom: 150px;
@@ -58,6 +54,7 @@ body {
     max-width: 768px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
     padding: 0 50px;
@@ -69,4 +66,23 @@ body {
   .container {
     max-width: 1440px;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
