@@ -32,9 +32,6 @@
     padding: 15px 12px;
     background-color: rgba(251, 251, 251, 0.3);
     min-width: 66px;
-}
-
-.footer-nav-item>a {
     display: block;
 }
 
@@ -68,6 +65,15 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: rgba(251, 251, 251, 0.4);
+}
+
+.footer-nav-item:active {
+    color: #1b414b;
+    background-color: #fbfbfb;
+}
+
+.footer-socials-svg:active {
+    fill: rgba(251, 251, 251, 0.8);
 }
 
 @media screen and (min-width: 768px) {
@@ -113,10 +119,32 @@
         max-width: 1230px;
         padding: 50px 75px 20px;
     }
+
+    .footer-yachtjet {
+        margin-right: 326px;
+    }
+
+    .footer-quote {
+        max-width: 693px;
+        margin: 0 auto 99px;
+    }
+
+    .footer-nav-item:hover {
+        color: #1b414b;
+        background-color: #fbfbfb;
+    }
+
+    .footer-socials-svg:hover {
+        fill: rgba(251, 251, 251, 0.8);
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .footer-container {
         max-width: 1390px;
+    }
+
+    .footer-yachtjet {
+        margin-right: 409px;
     }
 }
