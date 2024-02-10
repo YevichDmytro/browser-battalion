@@ -1,8 +1,8 @@
 @media all and (min-width:1280px) {
-    .container {
+/*     .container {
         display: flex;
         gap: 32px;
-    }
+    } */
 }
 
 .visually-hidden {
