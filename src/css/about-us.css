@@ -14,6 +14,12 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .about-us-container {
+    top: -35px;
+  }
+}
+
 .about-us-all-text {
   padding: 40px 20px 0 20px;
   margin-bottom: 40px;
@@ -21,8 +27,29 @@
 
 @media screen and (min-width: 768px) {
   .about-us-all-text {
-    padding: 50px 0px 0 32px;
+    padding: 50px 0 0 32px;
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us-all-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px 0 50px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-description {
+    max-width: 389px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us-description {
+    max-width: 354px;
   }
 }
 
@@ -42,9 +69,12 @@
     font-weight: 400;
     margin-bottom: 50px;
   }
+}
 
-  .about-us-description {
-    max-width: 389px;
+@media screen and (min-width: 1280px) {
+  .about-us-title {
+    font-weight: 500;
+    min-width: 537px;
   }
 }
 
