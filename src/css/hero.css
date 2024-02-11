@@ -11,7 +11,7 @@
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url(/img/hero-bg/yacht-bg-mob@2x.jpg);
+    background-image: url(../img/hero-bg/yacht-bg-mob@2x.jpg);
   }
 }
 

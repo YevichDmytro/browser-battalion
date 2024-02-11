@@ -1,4 +1,4 @@
-@media all and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .advantages-container {
     display: flex;
     gap: 32px;
@@ -12,14 +12,14 @@
   margin-bottom: 20px;
 }
 
-@media all and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .advantages-text-sidebar {
     padding: 90px 32px;
     margin-bottom: 32px;
   }
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .advantages-text-sidebar {
     max-width: 716px;
     padding: 90px 50px;
@@ -27,13 +27,13 @@
   }
 }
 
-@media all and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .advantages-text-sidebar {
     max-width: 768px;
   }
 }
 
-@media all and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
@@ -41,19 +41,19 @@
   }
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .advantages-list {
     gap: 44px;
   }
 }
 
-@media all and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .advantages-list-item {
     width: calc((100% - 32px) / 2);
   }
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .advantages-list-item {
     width: calc((100% - 44px) / 2);
   }
@@ -63,7 +63,7 @@
   margin-bottom: 40px;
 }
 
-@media all and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .advantages-list-item:not(:last-child) {
     margin-bottom: 0;
   }
@@ -77,7 +77,7 @@
   margin-bottom: 38px;
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .counter {
     font-size: 32px;
   }
@@ -91,7 +91,7 @@
   position: relative;
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .advantages-text {
     font-size: 13px;
     line-height: 1.15;
@@ -110,7 +110,7 @@
   background: rgba(251, 251, 251, 0.1);
 }
 
-@media all and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .advantages-text::before {
     width: 100%;
   }
