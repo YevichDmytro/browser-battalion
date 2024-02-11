@@ -440,7 +440,7 @@
             id="user-name"
             placeholder="Full Name"
             required
-            pattern="[A-Za-z]+"
+            pattern="^[A-Za-z ]+$"
           />
         </label>
         <label class="rent-yacht-lable" for="user-email"
@@ -462,7 +462,7 @@
             id="user-tel"
             placeholder="Phone number"
             required
-            pattern="^\+[0-9]{1,}$"
+            pattern="^\+?\d{10,12}$"
           />
         </label>
         <label class="rent-yacht-lable label-bottom" for="user-comment">
