@@ -36,8 +36,8 @@
   border-radius: 24px;
 }
 
-.reviews-list {
-  justify-content: center;
+.reviews-list li:nth-last-child(-n + 2) {
+  display: none;
 }
 
 .reviews-list-item {
@@ -48,10 +48,6 @@
   border-radius: 24px;
   background: rgb(251, 251, 251);
   padding: 32px 8px;
-}
-
-.swiper-slide {
-  width: 330px !important; /* Задайте бажану ширину */
 }
 
 .list-title {
@@ -80,10 +76,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
-}
-
-.swiper-container {
-  height: 282px;
 }
 
 /* Tablet */
@@ -121,8 +113,8 @@
     padding: 0;
   }
 
-  .reviews-list li:nth-last-child(1) {
-    display: none;
+  .reviews-list li:nth-last-child(2) {
+    display: block;
   }
 
   .reviews-list {
@@ -145,7 +137,6 @@
 }
 
 /* Desktop 1280 */
-
 @media screen and (min-width: 1280px) {
   .reviews-title {
     font-size: 48px;
@@ -155,12 +146,8 @@
     font-size: 14px;
   }
 
-  .reviews-list li:nth-last-child(1) {
+  .reviews-list li:nth-last-child(n + 1) {
     display: block;
-  }
-
-  .swiper-slide {
-    width: 376px !important; /* Задайте бажану ширину */
   }
 
   .reviews-list {
@@ -171,6 +158,7 @@
     padding: 32px 28px;
   }
 }
+
 /* Desktop 1440 */
 @media screen and (min-width: 1440px) {
   .reviews-list-item {
@@ -179,9 +167,5 @@
 
   .reviews-list {
     gap: 32px;
-  }
-
-  .swiper-slide {
-    width: 392px !important; /* Задайте бажану ширину */
   }
 }
