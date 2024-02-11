@@ -2,7 +2,7 @@
   <div class="container flex-container">
     <div class="container-section">
       <h2 class="rent-yacht-title" id="rent-a-yacht">Rent a yacht now</h2>
-      <form class="rent-yacht-form" action="">
+      <form class="rent-yacht-form">
         <label class="rent-yacht-lable" for="user-name"
           ><input
             class="rent-yacht-input"
@@ -11,7 +11,7 @@
             id="user-name"
             placeholder="Full Name"
             required
-            pattern="[A-Za-z]+"
+            pattern="^[A-Za-z ]+$"
           />
         </label>
         <label class="rent-yacht-lable" for="user-email"
@@ -33,7 +33,7 @@
             id="user-tel"
             placeholder="Phone number"
             required
-            pattern="^\+[0-9]{1,}$"
+            pattern="^\+?\d{10,12}$"
           />
         </label>
         <label class="rent-yacht-lable label-bottom" for="user-comment">
@@ -43,7 +43,6 @@
             name="user-comment"
             id="user-comment"
             placeholder="Comment"
-            pattern=".{10,}"
           ></textarea>
         </label>
         <button class="rent-yacht-button" type="submit">Send</button>
