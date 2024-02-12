@@ -40,18 +40,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .about-us-description {
-    max-width: 389px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .about-us-description {
-    max-width: 354px;
-  }
-}
-
 .about-us-title {
   color: #1b414b;
   font-size: 28px;
@@ -73,7 +61,25 @@
 @media screen and (min-width: 1280px) {
   .about-us-title {
     font-weight: 500;
-    min-width: 537px;
+    max-width: 537px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-description {
+    max-width: 389px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us-description {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-us-description {
+    max-width: 404px;
   }
 }
 
@@ -106,9 +112,6 @@
     font-size: 13px;
     line-height: 1.15;
   }
-}
-
-.about-us-picture {
 }
 
 .about-us-img {

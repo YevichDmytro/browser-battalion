@@ -68,6 +68,9 @@
   color: #fbfbfb;
   border: none;
   margin-top: 40px;
+  transition: background-color 400ms cubic-bezier(0.7, 1, 0.15, 0.9),
+    color 400ms cubic-bezier(0.7, 1, 0.15, 0.9),
+    border 400ms cubic-bezier(0.7, 1, 0.15, 0.9);
 }
 
 .rent-yacht-button:active {
@@ -150,6 +153,7 @@
 
   .rent-yacht-button:hover,
   .rent-yacht-button:focus {
+    border: 1px solid rgba(251, 251, 251, 0.5);
     background-color: #fbfbfb;
     color: #1b414b;
     border: none;

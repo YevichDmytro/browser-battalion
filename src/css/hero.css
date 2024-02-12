@@ -11,7 +11,7 @@
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url(/img/hero-bg/yacht-bg-mob@2x.jpg);
+    background-image: url(../img/hero-bg/yacht-bg-mob@2x.jpg);
   }
 }
 
@@ -40,6 +40,7 @@
   color: rgba(251, 251, 251, 0.7);
   margin-bottom: 38px;
 }
+
 .hero-btn {
   background: #1b414b;
   border-radius: 15px;
@@ -54,8 +55,8 @@
   display: block;
   border: none;
   margin: 0 auto;
-  transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 700ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    color 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .hero-btn:active {
@@ -79,15 +80,18 @@
       background-image: url(/img/hero-bg/yacht-bg-tab@2x.jpg);
     }
   }
+
   .hero-title {
     font-size: 70px;
   }
+
   .hero-text {
     font-size: 16px;
     line-height: 1.4;
     max-width: 597px;
     margin-bottom: 48px;
   }
+
   .hero-btn {
     padding: 16px 40px;
     min-width: 179px;
@@ -105,6 +109,7 @@
     padding: 235px 0 215px;
     height: 800px;
   }
+
   @media screen and (min-device-pixel-ration: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
@@ -112,19 +117,23 @@
       background-image: url(/img/hero-bg/yacht-bg-desktop@2x.jpg);
     }
   }
+
   .hero-title {
     font-size: 80px;
     max-width: 1001px;
   }
+
   .hero-text {
     font-size: 16px;
     line-height: 1.4;
   }
+
   .hero-btn:hover {
     background: #fbfbfb;
     color: #1b414b;
   }
 }
+
 /**------------------------**/
 /**---------DESKTOP(1440px)--------**/
 @media screen and (min-width: 1440px) {
@@ -133,6 +142,7 @@
     padding-bottom: 210px;
     height: 795px;
   }
+
   @media screen and (min-device-pixel-ration: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
@@ -141,4 +151,3 @@
     }
   }
 }
-/**------------------------**/

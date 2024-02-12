@@ -1,0 +1,53 @@
+<div class="backrop" id="myModal">
+  <div class="modal">
+    <button class="modal-button close" type="button" onclick="closeModal()">
+      <svg class="modal-button-icon" width="16" height="16">
+        <use href="./img/sprite.svg#icon-close-sharp"></use>
+      </svg>
+    </button>
+    <p class="modal-text">Rent a yacht now</p>
+    <form>
+      <div class="form-container">
+        <input
+          type="text"
+          id="user-name"
+          name="user-name"
+          class="form-input"
+          pattern="[A-Za-z]+"
+          placeholder="Full Name"
+          required
+        />
+      </div>
+      <div class="form-container">
+        <input
+          type="email"
+          id="user-tel"
+          name="user-name"
+          class="form-input"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div class="form-container">
+        <input
+          type="tel"
+          id="user-mail"
+          name="user-name"
+          class="form-input"
+          pattern="^\+[0-9]{1,}$"
+          placeholder="Phone number"
+          required
+        />
+      </div>
+      <div class="form-comment-container">
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          placeholder="Comment"
+          class="form-textarea"
+        ></textarea>
+      </div>
+      <button type="submit" class="form-button">Send</button>
+    </form>
+  </div>
+</div>
