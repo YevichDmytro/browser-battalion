@@ -2,8 +2,7 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
-  // добавили доп класс что бы закрыть после нажатия на ссылку
-  const menuLinks = document.querySelectorAll('.mobile-modal-link');
+  const menuLinks = document.querySelectorAll('.mob-menu-link'); // Виберіть всі посилання в меню
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -17,16 +16,15 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
-  //  добавили что бы закрывалось при нажатии на ссылку
   menuLinks.forEach(menuLink => {
-    menuLink.addEventListener('click', toggleMenu);
+    menuLink.addEventListener('click', () => {
+      toggleMenu(); // Закриваємо меню при кліку на посилання
+    });
   });
 
-  // стандартно из скрипта от Репеты
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
-  // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
