@@ -1,30 +1,41 @@
-// Ініціалізація Swiper
-let swiper = new Swiper('.reviews-description', {
-  effect: 'cards',
-  grabCursor: true,
-});
+let swiper2;
 
-// Функція для перевірки ширини екрану та вмикання/вимикання Swiper
 function toggleSwiper() {
   if (window.innerWidth >= 768) {
-    // Вимикання Swiper якщо ширина екрану 768px або більше
-    if (swiper) {
-      swiper.destroy();
-      swiper = null;
+    // Вимкнення Swiper при ширині екрану 768px або більше
+    if (swiper2) {
+      swiper2.destroy();
+      swiper2 = null;
     }
   } else {
-    // Увімкнення Swiper якщо ширина екрану менше 768px
-    if (!swiper) {
-      swiper = new Swiper('.reviews-description', {
-        effect: 'cards',
+    // Увімкнення Swiper при ширині екрану менше 768px
+    if (!swiper2) {
+      swiper2 = new Swiper('.mySwiper2', {
         grabCursor: true,
+        effect: 'creative',
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: ['-120%', 0, -500],
+          },
+          next: {
+            shadow: true,
+            translate: ['120%', 0, -500],
+          },
+        },
+        loop: true, // Додано параметр loop: true для безкінечних слайдів
+        autoplay: {
+          delay: 3000, // Збільшено затримку автопрокрутки до 3 секунд
+          disableOnInteraction: false, // Вимкнення автопрокрутки після взаємодії користувача
+        },
+        speed: 2000, // Додано плавну зміну слайдів за 2 секунду
       });
     }
   }
 }
 
-// Викликаємо функцію для перевірки ширини екрану при завантаженні сторінки
+// Викликаємо функцію при завантаженні сторінки
 toggleSwiper();
 
-// Викликаємо функцію для перевірки ширини екрану при зміні розміру вікна
+// Викликаємо функцію при зміні розміру вікна
 window.addEventListener('resize', toggleSwiper);
